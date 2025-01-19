@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyramides de Gizeh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="hero" style="background-image: url('images html-css/pyramide de gizeh');">
+      <h1>Pyramides de Gizeh</h1>
+      <p>Les mystères de l'Égypte antique</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tajmahal.html">Taj Mahal</a></li>
+        <li><a href="machupicchu.html">Machu Picchu</a></li>
+        <li><a href="gizeh.html" class="active">Pyramides de Gizeh</a></li>
+        <li><a href="neuschwanstein.html">Neuschwanstein</a></li>
+        <li><a href="santorin.html">Santorin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Description -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/gizeh1.jpeg');">
+        <div class="content">
+          <h2>Histoire</h2>
+          <p>Les pyramides de Gizeh, situées près du Caire, en Égypte, sont parmi les structures les plus anciennes et les plus emblématiques du monde. Construites il y a plus de 4 500 ans, elles témoignent de l'ingéniosité des civilisations antiques.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/gizeh.jpeg');">
+        <div class="content">
+          <h2>Galerie d'Images</h2>
+          <div class="grid">
+            <img src="images html-css/grande pyramide" alt="Grande pyramide de Gizeh" onclick="openImage('images html-css/grande pyramide')">
+            <img src="images html-css/pyramide sous le ciel bleu" alt="Les pyramides sous le ciel bleu" onclick="openImage('images html-css/pyramide sous le ciel bleu')">
+            <img src="images html-css/pyramides et sphinx" alt="Le Sphinx et les pyramides" onclick="openImage('images html-css/pyramides et sphinx')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Carte -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/carte pyramide');">
+        <div class="content">
+          <h2>Localisation</h2>
+          <iframe src="images html-css/carte pyramide"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Monuments Rares et Fascinants. Tous droits réservés.</p>
+  </footer>
+
+  <div id="imageOverlay" onclick="closeImage()">
+    <img id="overlayImage" src="" alt="Image plein écran">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

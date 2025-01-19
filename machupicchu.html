@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machu Picchu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="hero" style="background-image: url('images html-css/Machu picchu');">
+      <h1>Machu Picchu</h1>
+      <p>La cité perdue des Incas</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tajmahal.html">Taj Mahal</a></li>
+        <li><a href="machupicchu.html" class="active">Machu Picchu</a></li>
+        <li><a href="gizeh.html">Pyramides de Gizeh</a></li>
+        <li><a href="neuschwanstein.html">Neuschwanstein</a></li>
+        <li><a href="santorin.html">Santorin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Description -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/Machu Picchu 2.jpeg');">
+        <div class="content">
+          <h2>Histoire</h2>
+          <p>Le Machu Picchu, situé dans les Andes péruviennes, est une ancienne cité inca construite au XVe siècle. Ce site spectaculaire, perché sur une crête montagneuse, est considéré comme un symbole de l'ingéniosité et de l'architecture inca.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/Machu Picchu 1.jpeg');">
+        <div class="content">
+          <h2>Galerie d'Images</h2>
+          <div class="grid">
+            <img src="images html-css/vue aérien machu picchu" alt="Vue aérienne du Machu Picchu" onclick="openImage('images html-css/vue aérien machu picchu')">
+            <img src="images html-css/ruines manchu picchu" alt="Ruines du Machu Picchu" onclick="openImage('images html-css/ruines manchu picchu')">
+            <img src="images html-css/chemin incas vers manchu picchu" alt="Chemin Inca menant à Machu Picchu" onclick="openImage('images html-css/chemin incas vers manchu picchu')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Carte -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/carte manchu picchu');">
+        <div class="content">
+          <h2>Localisation</h2>
+          <iframe src="images html-css/carte manchu picchu"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Monuments Rares et Fascinants. Tous droits réservés.</p>
+  </footer>
+
+  <div id="imageOverlay" onclick="closeImage()">
+    <img id="overlayImage" src="" alt="Image plein écran">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

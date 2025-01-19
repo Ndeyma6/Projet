@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santorin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="hero" style="background-image: url('images html-css/Santorin.webp');">
+      <h1>Santorin</h1>
+      <p>Un paradis blanc et bleu</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tajmahal.html">Taj Mahal</a></li>
+        <li><a href="machupicchu.html">Machu Picchu</a></li>
+        <li><a href="gizeh.html">Pyramides de Gizeh</a></li>
+        <li><a href="neuschwanstein.html">Neuschwanstein</a></li>
+        <li><a href="santorin.html" class="active">Santorin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Description -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/Santorin e.jpeg');">
+        <div class="content">
+          <h2>Histoire</h2>
+          <p>Santorin, située en Grèce, est une île des Cyclades célèbre pour ses maisons blanches aux dômes bleus surplombant la mer Égée. Formée par une éruption volcanique, elle est aujourd'hui une destination prisée pour ses couchers de soleil spectaculaires.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/Santorin2.jpeg');">
+        <div class="content">
+          <h2>Galerie d'Images</h2>
+          <div class="grid">
+            <img src="images html-css/Maisons blanches de Santorin" alt="Maisons blanches de Santorin" onclick="openImage('images html-css/Maisons blanches de Santorin')">
+            <img src="images html-css/Coucher de soleil à Santorin" alt="Coucher de soleil à Santorin" onclick="openImage('images html-css/Coucher de soleil à Santorin')">
+            <img src="images html-css/Vue de la Caldeira de Santorin" alt="Vue de la Caldeira de Santorin" onclick="openImage('images html-css/Vue de la Caldeira de Santorin')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Carte -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/carte Santorin');">
+        <div class="content">
+          <h2>Localisation</h2>
+          <iframe src="images html-css/carte Santorin"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Monuments Rares et Fascinants. Tous droits réservés.</p>
+  </footer>
+
+  <div id="imageOverlay" onclick="closeImage()">
+    <img id="overlayImage" src="" alt="Image plein écran">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

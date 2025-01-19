@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taj Mahal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="hero" style="background-image: url('images html-css/taj mahal acceuille.avif');">
+      <h1>Taj Mahal</h1>
+      <p>Symbole éternel de l'amour</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tajmahal.html" class="active">Taj Mahal</a></li>
+        <li><a href="machupicchu.html">Machu Picchu</a></li>
+        <li><a href="gizeh.html">Pyramides de Gizeh</a></li>
+        <li><a href="neuschwanstein.html">Neuschwanstein</a></li>
+        <li><a href="santorin.html">Santorin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Description -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/taj mahal.webp');">
+        <div class="content">
+          <h2>Histoire</h2>
+          <p>Le Taj Mahal, situé à Agra, en Inde, est un chef-d'œuvre d'architecture moghole construit par l'empereur Shah Jahan en mémoire de son épouse Mumtaz Mahal. Ce monument emblématique, terminé en 1648, est aujourd'hui un symbole d'amour éternel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/taj mahal2');">
+        <div class="content">
+          <h2>Galerie d'Images</h2>
+          <div class="grid">
+            <img src="images html-css/taj mahal" alt="Vue du Taj Mahal" onclick="openImage('images html-css/taj mahal')">
+            <img src="images html-css/Taj Mahal coucher de soleil.webp" alt="Taj Mahal au coucher de soleil" onclick="openImage('images html-css/Taj Mahal coucher de soleil.webp')">
+            <img src="images html-css/Jardin du Taj Mahal" alt="Jardin du Taj Mahal" onclick="openImage('images html-css/Jardin du Taj Mahal')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Carte -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/taj mahal carte');">
+        <div class="content">
+          <h2>Localisation</h2>
+          <iframe src="images html-css/taj mahal carte"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Monuments Rares et Fascinants. Tous droits réservés.</p>
+  </footer>
+
+  <div id="imageOverlay" onclick="closeImage()">
+    <img id="overlayImage" src="" alt="Image plein écran">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

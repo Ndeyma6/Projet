@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Château de Neuschwanstein</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="hero" style="background-image: url('images html-css/Château de Neuschwanstein');">
+      <h1>Château de Neuschwanstein</h1>
+      <p>Le château de conte de fées</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tajmahal.html">Taj Mahal</a></li>
+        <li><a href="machupicchu.html">Machu Picchu</a></li>
+        <li><a href="gizeh.html">Pyramides de Gizeh</a></li>
+        <li><a href="neuschwanstein.html" class="active">Neuschwanstein</a></li>
+        <li><a href="santorin.html">Santorin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section Description -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/neuschwanstein 2.jpeg');">
+        <div class="content">
+          <h2>Histoire</h2>
+          <p>Situé en Allemagne, le Château de Neuschwanstein est l'un des monuments les plus célèbres d'Europe. Inspiré par l'architecture médiévale, il a été construit au XIXe siècle par le roi Louis II de Bavière et a inspiré le château de Disney.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/NEUS.jpeg');">
+        <div class="content">
+          <h2>Galerie d'Images</h2>
+          <div class="grid">
+            <img src="images html-css/vue aérienne Château de Neuschwanstein" alt="Vue aérienne du Château de Neuschwanstein" onclick="openImage('images html-css/vue aérienne Château de Neuschwanstein')">
+            <img src="images html-css/Château de Neuschwanstein sosu la neige" alt="Château en hiver" onclick="openImage('images html-css/Château de Neuschwanstein sosu la neige')">
+            <img src="images html-css/intérieur Château de Neuschwanstein" alt="Intérieur du Château de Neuschwanstein" onclick="openImage('images html-css/intérieur Château de Neuschwanstein')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Carte -->
+    <section>
+      <div class="background-image" style="background-image: url('images html-css/Carte Château de Neuschwanstein');">
+        <div class="content">
+          <h2>Localisation</h2>
+          <iframe src="images html-css/Carte Château de Neuschwanstein"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Monuments Rares et Fascinants. Tous droits réservés.</p>
+  </footer>
+
+  <div id="imageOverlay" onclick="closeImage()">
+    <img id="overlayImage" src="" alt="Image plein écran">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
